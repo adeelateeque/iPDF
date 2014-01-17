@@ -19,5 +19,6 @@ You can easily plug into each section with the use of "Partials", you can also e
 
 TODOs:
 * Code refactoring
+* Convert to CocoaPods package
 * More Documentation
 * More features
