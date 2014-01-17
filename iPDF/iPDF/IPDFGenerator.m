@@ -44,7 +44,7 @@ IPDFPageRenderer *pageRenderer;
     return self;
 }
 
-- (void)generateContractWithName:(NSString *)reportName templates:(NSArray *)templates pageOrientation:(IPDFPageOrientation)orientation dataSource:(id <IPDFGeneratorDataSource>)dataSource delegate:(id <IPDFGeneratorDelegate>)delegate error:(NSError * __autoreleasing *)error {
+- (void)generatePDFWithName:(NSString *)reportName templates:(NSArray *)templates pageOrientation:(IPDFPageOrientation)orientation dataSource:(id <IPDFGeneratorDataSource>)dataSource delegate:(id <IPDFGeneratorDelegate>)delegate error:(NSError * __autoreleasing *)error {
     
     // TODO: replace and add report processing to queue
     if (self.renderingQueue.operationCount > 0)

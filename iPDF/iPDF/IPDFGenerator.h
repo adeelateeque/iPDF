@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, IPDFPageOrientation) {
 @property (nonatomic, retain)   NSOperationQueue * renderingQueue;
 
 // Instance methods
-- (void)generateContractWithName:(NSString *)reportName templates:(NSArray *)templatePaths pageOrientation:(IPDFPageOrientation)orientation dataSource:(id <IPDFGeneratorDataSource>)dataSource delegate:(id <IPDFGeneratorDelegate>)delegate error:(NSError *__autoreleasing *)error;
+- (void)generatePDFWithName:(NSString *)reportName templates:(NSArray *)templatePaths pageOrientation:(IPDFPageOrientation)orientation dataSource:(id <IPDFGeneratorDataSource>)dataSource delegate:(id <IPDFGeneratorDelegate>)delegate error:(NSError *__autoreleasing *)error;
 
 // Static methods
 + (IPDFGenerator *) sharedGenerator;

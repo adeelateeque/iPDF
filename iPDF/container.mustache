@@ -1,0 +1,164 @@
+<html>
+<head>
+    <style>
+        /* start global styles */
+        body {
+            font-family: Verdana, Verdana, Geneva, sans-serif;
+        }
+
+        .header {
+            clear: both;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .header img {
+            width: 300px;
+            height: 65px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .header .barcode
+        {
+           float: right;
+           height: 100px;
+           width: 200;
+        }
+
+        .header .barcode img {
+            background-color: #fafafa;
+            height: 100%;
+            width: 100%;
+        }
+
+        .header .documentNumber
+        {
+          width: 100%;
+          text-align:center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        ul li:before {
+            content: "-";
+            position: relative;
+            left: -5px;
+        }
+
+        ul li {
+            text-indent: -5px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        tr th:nth-child(even) {
+             border-left: 1px solid #505050;
+         }
+
+        tr th, tr td {
+            font-weight: normal;
+            padding: 5px;
+            padding-left: 10px;
+            margin: 0;
+            width: 20%;
+            text-align: left;
+        }
+
+        .footer {
+            font-size: 12px;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .whitecell {
+            background-color: white;
+            border-top: 1px solid #505050;
+            border-left: 1px solid #505050;
+        }
+
+        .infotable {
+            background-color: #CECDCD;
+            width: 100%;
+            border: 1px solid #505050;
+            margin-bottom: 30px;
+        }
+
+        .stick-to-above-table {
+            margin-top: -30px;
+            border-top: none;
+        }
+
+        .infotable tr th {
+            text-align: left;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            color: black;
+        }
+
+        .infotable .sub-heading {
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .infotable .header-col-1
+        {
+            width: 49.9% !important;
+            border-right: 1px solid #505050 !important;
+        }
+
+        .infotable .header-col-2
+        {
+            width: 24.9% !important; border-right: 1px solid #505050 !important; border-left:none !important;
+        }
+
+        .infotable .header-col-3
+        {
+            width: 24.8% !important;
+        }
+
+        /* end global styles */
+    </style>
+
+</head>
+<body>
+{{#documentHeader}}
+    Generated on: {{dateGenerated}}
+{{/documentHeader}}
+
+{{#pageHeader}}
+<div class='header'>
+    <img src='logo.png'/>
+    <div class='barcode'>
+        <img src='{{barcodeImage}}'/>
+        <p class='documentNumber'>{{documentNumber}}</p>
+    </div>
+</div>
+{{/pageHeader}}
+
+{{#pageContent}}
+
+{{/pageContent}}
+
+{{#pageFooter}}
+<div class='footer'>
+    Page {{pageNumber}}
+</div>
+{{/pageFooter}}
+</body>
+</html>

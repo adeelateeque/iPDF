@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C252E5211888DDE300E0C4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5201888DDE300E0C4BC /* Foundation.framework */; };
-		C252E5261888DDE300E0C4BC /* iPDF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C252E5251888DDE300E0C4BC /* iPDF.h */; };
-		C252E5281888DDE300E0C4BC /* iPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E5271888DDE300E0C4BC /* iPDF.m */; };
 		C252E52F1888DDE300E0C4BC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E52E1888DDE300E0C4BC /* XCTest.framework */; };
 		C252E5301888DDE300E0C4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5201888DDE300E0C4BC /* Foundation.framework */; };
 		C252E5321888DDE300E0C4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5311888DDE300E0C4BC /* UIKit.framework */; };
@@ -42,7 +40,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C252E5261888DDE300E0C4BC /* iPDF.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +49,6 @@
 		C252E51D1888DDE300E0C4BC /* libiPDF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiPDF.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C252E5201888DDE300E0C4BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C252E5241888DDE300E0C4BC /* iPDF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPDF-Prefix.pch"; sourceTree = "<group>"; };
-		C252E5251888DDE300E0C4BC /* iPDF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPDF.h; sourceTree = "<group>"; };
-		C252E5271888DDE300E0C4BC /* iPDF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPDF.m; sourceTree = "<group>"; };
 		C252E52D1888DDE300E0C4BC /* iPDFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPDFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C252E52E1888DDE300E0C4BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C252E5311888DDE300E0C4BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -89,6 +84,7 @@
 		C252E5681888E0C300E0C4BC /* NSFormatter+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFormatter+GRMustache.h"; sourceTree = "<group>"; };
 		C252E5691888E0C300E0C4BC /* NSValueTransformer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+GRMustache.h"; sourceTree = "<group>"; };
 		C252E56B1888E0C300E0C4BC /* libGRMustache6-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGRMustache6-iOS.a"; sourceTree = "<group>"; };
+		C2896DE21888F41A00F45F86 /* container.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = container.mustache; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +148,7 @@
 		C252E5221888DDE300E0C4BC /* iPDF */ = {
 			isa = PBXGroup;
 			children = (
+				C2896DE21888F41A00F45F86 /* container.mustache */,
 				C252E5461888DED200E0C4BC /* IPDFGenerator.m */,
 				C252E5471888DED200E0C4BC /* IPDFGenerator.h */,
 				C252E5481888DED200E0C4BC /* IPDFRenderOperation.m */,
@@ -163,8 +160,6 @@
 				C252E54E1888DED200E0C4BC /* IPDFPageRenderer.m */,
 				C252E54F1888DED200E0C4BC /* IPDFRenderOperation.h */,
 				C252E5501888DED200E0C4BC /* IPDFRenderOperationDelegate.h */,
-				C252E5251888DDE300E0C4BC /* iPDF.h */,
-				C252E5271888DDE300E0C4BC /* iPDF.m */,
 				C252E5231888DDE300E0C4BC /* Supporting Files */,
 			);
 			path = iPDF;
@@ -317,7 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C252E5541888DED200E0C4BC /* IPDFPageRenderer.m in Sources */,
-				C252E5281888DDE300E0C4BC /* iPDF.m in Sources */,
 				C252E5511888DED200E0C4BC /* IPDFGenerator.m in Sources */,
 				C252E5521888DED200E0C4BC /* IPDFRenderOperation.m in Sources */,
 				C252E5531888DED200E0C4BC /* IPDFBlankRender.m in Sources */,
