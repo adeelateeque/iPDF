@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C252E5211888DDE300E0C4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5201888DDE300E0C4BC /* Foundation.framework */; };
+		C252E5261888DDE300E0C4BC /* iPDF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C252E5251888DDE300E0C4BC /* iPDF.h */; };
+		C252E5281888DDE300E0C4BC /* iPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E5271888DDE300E0C4BC /* iPDF.m */; };
+		C252E52F1888DDE300E0C4BC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E52E1888DDE300E0C4BC /* XCTest.framework */; };
+		C252E5301888DDE300E0C4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5201888DDE300E0C4BC /* Foundation.framework */; };
+		C252E5321888DDE300E0C4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5311888DDE300E0C4BC /* UIKit.framework */; };
+		C252E5351888DDE300E0C4BC /* libiPDF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E51D1888DDE300E0C4BC /* libiPDF.a */; };
+		C252E53B1888DDE300E0C4BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C252E5391888DDE300E0C4BC /* InfoPlist.strings */; };
+		C252E53D1888DDE300E0C4BC /* iPDFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E53C1888DDE300E0C4BC /* iPDFTests.m */; };
+		C252E5511888DED200E0C4BC /* IPDFGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E5461888DED200E0C4BC /* IPDFGenerator.m */; };
+		C252E5521888DED200E0C4BC /* IPDFRenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E5481888DED200E0C4BC /* IPDFRenderOperation.m */; };
+		C252E5531888DED200E0C4BC /* IPDFBlankRender.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E54A1888DED200E0C4BC /* IPDFBlankRender.m */; };
+		C252E5541888DED200E0C4BC /* IPDFPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C252E54E1888DED200E0C4BC /* IPDFPageRenderer.m */; };
+		C252E5561888DF3200E0C4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5551888DF3200E0C4BC /* UIKit.framework */; };
+		C252E5581888DF6100E0C4BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E5571888DF6100E0C4BC /* CoreGraphics.framework */; };
+		C252E56C1888E0C300E0C4BC /* libGRMustache6-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C252E56B1888E0C300E0C4BC /* libGRMustache6-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C252E5331888DDE300E0C4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C252E5151888DDE300E0C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C252E51C1888DDE300E0C4BC;
+			remoteInfo = iPDF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C252E51B1888DDE300E0C4BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C252E5261888DDE300E0C4BC /* iPDF.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C252E51D1888DDE300E0C4BC /* libiPDF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiPDF.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C252E5201888DDE300E0C4BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C252E5241888DDE300E0C4BC /* iPDF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPDF-Prefix.pch"; sourceTree = "<group>"; };
+		C252E5251888DDE300E0C4BC /* iPDF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPDF.h; sourceTree = "<group>"; };
+		C252E5271888DDE300E0C4BC /* iPDF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPDF.m; sourceTree = "<group>"; };
+		C252E52D1888DDE300E0C4BC /* iPDFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPDFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C252E52E1888DDE300E0C4BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C252E5311888DDE300E0C4BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C252E5381888DDE300E0C4BC /* iPDFTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPDFTests-Info.plist"; sourceTree = "<group>"; };
+		C252E53A1888DDE300E0C4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C252E53C1888DDE300E0C4BC /* iPDFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPDFTests.m; sourceTree = "<group>"; };
+		C252E5461888DED200E0C4BC /* IPDFGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFGenerator.m; sourceTree = "<group>"; };
+		C252E5471888DED200E0C4BC /* IPDFGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFGenerator.h; sourceTree = "<group>"; };
+		C252E5481888DED200E0C4BC /* IPDFRenderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFRenderOperation.m; sourceTree = "<group>"; };
+		C252E5491888DED200E0C4BC /* IPDFBlankRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFBlankRender.h; sourceTree = "<group>"; };
+		C252E54A1888DED200E0C4BC /* IPDFBlankRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFBlankRender.m; sourceTree = "<group>"; };
+		C252E54B1888DED200E0C4BC /* IPDFGeneratorDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFGeneratorDataSource.h; sourceTree = "<group>"; };
+		C252E54C1888DED200E0C4BC /* IPDFGeneratorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFGeneratorDelegate.h; sourceTree = "<group>"; };
+		C252E54D1888DED200E0C4BC /* IPDFPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFPageRenderer.h; sourceTree = "<group>"; };
+		C252E54E1888DED200E0C4BC /* IPDFPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDFPageRenderer.m; sourceTree = "<group>"; };
+		C252E54F1888DED200E0C4BC /* IPDFRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFRenderOperation.h; sourceTree = "<group>"; };
+		C252E5501888DED200E0C4BC /* IPDFRenderOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDFRenderOperationDelegate.h; sourceTree = "<group>"; };
+		C252E5551888DF3200E0C4BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C252E5571888DF6100E0C4BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C252E55B1888E0C300E0C4BC /* GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustache.h; sourceTree = "<group>"; };
+		C252E55C1888E0C300E0C4BC /* GRMustacheAvailabilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheAvailabilityMacros.h; sourceTree = "<group>"; };
+		C252E55D1888E0C300E0C4BC /* GRMustacheConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheConfiguration.h; sourceTree = "<group>"; };
+		C252E55E1888E0C300E0C4BC /* GRMustacheContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheContext.h; sourceTree = "<group>"; };
+		C252E55F1888E0C300E0C4BC /* GRMustacheError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheError.h; sourceTree = "<group>"; };
+		C252E5601888E0C300E0C4BC /* GRMustacheFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheFilter.h; sourceTree = "<group>"; };
+		C252E5611888E0C300E0C4BC /* GRMustacheLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheLocalizer.h; sourceTree = "<group>"; };
+		C252E5621888E0C300E0C4BC /* GRMustacheRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheRendering.h; sourceTree = "<group>"; };
+		C252E5631888E0C300E0C4BC /* GRMustacheTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTag.h; sourceTree = "<group>"; };
+		C252E5641888E0C300E0C4BC /* GRMustacheTagDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTagDelegate.h; sourceTree = "<group>"; };
+		C252E5651888E0C300E0C4BC /* GRMustacheTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplate.h; sourceTree = "<group>"; };
+		C252E5661888E0C300E0C4BC /* GRMustacheTemplateRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheTemplateRepository.h; sourceTree = "<group>"; };
+		C252E5671888E0C300E0C4BC /* GRMustacheVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMustacheVersion.h; sourceTree = "<group>"; };
+		C252E5681888E0C300E0C4BC /* NSFormatter+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFormatter+GRMustache.h"; sourceTree = "<group>"; };
+		C252E5691888E0C300E0C4BC /* NSValueTransformer+GRMustache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+GRMustache.h"; sourceTree = "<group>"; };
+		C252E56B1888E0C300E0C4BC /* libGRMustache6-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGRMustache6-iOS.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C252E51A1888DDE300E0C4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E5211888DDE300E0C4BC /* Foundation.framework in Frameworks */,
+				C252E5581888DF6100E0C4BC /* CoreGraphics.framework in Frameworks */,
+				C252E5561888DF3200E0C4BC /* UIKit.framework in Frameworks */,
+				C252E56C1888E0C300E0C4BC /* libGRMustache6-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C252E52A1888DDE300E0C4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E52F1888DDE300E0C4BC /* XCTest.framework in Frameworks */,
+				C252E5321888DDE300E0C4BC /* UIKit.framework in Frameworks */,
+				C252E5351888DDE300E0C4BC /* libiPDF.a in Frameworks */,
+				C252E5301888DDE300E0C4BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C252E5141888DDE300E0C4BC = {
+			isa = PBXGroup;
+			children = (
+				C252E5221888DDE300E0C4BC /* iPDF */,
+				C252E5361888DDE300E0C4BC /* iPDFTests */,
+				C252E51F1888DDE300E0C4BC /* Frameworks */,
+				C252E51E1888DDE300E0C4BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C252E51E1888DDE300E0C4BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C252E51D1888DDE300E0C4BC /* libiPDF.a */,
+				C252E52D1888DDE300E0C4BC /* iPDFTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C252E51F1888DDE300E0C4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C252E5591888E0C300E0C4BC /* GRMustache */,
+				C252E5571888DF6100E0C4BC /* CoreGraphics.framework */,
+				C252E5551888DF3200E0C4BC /* UIKit.framework */,
+				C252E5201888DDE300E0C4BC /* Foundation.framework */,
+				C252E52E1888DDE300E0C4BC /* XCTest.framework */,
+				C252E5311888DDE300E0C4BC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C252E5221888DDE300E0C4BC /* iPDF */ = {
+			isa = PBXGroup;
+			children = (
+				C252E5461888DED200E0C4BC /* IPDFGenerator.m */,
+				C252E5471888DED200E0C4BC /* IPDFGenerator.h */,
+				C252E5481888DED200E0C4BC /* IPDFRenderOperation.m */,
+				C252E5491888DED200E0C4BC /* IPDFBlankRender.h */,
+				C252E54A1888DED200E0C4BC /* IPDFBlankRender.m */,
+				C252E54B1888DED200E0C4BC /* IPDFGeneratorDataSource.h */,
+				C252E54C1888DED200E0C4BC /* IPDFGeneratorDelegate.h */,
+				C252E54D1888DED200E0C4BC /* IPDFPageRenderer.h */,
+				C252E54E1888DED200E0C4BC /* IPDFPageRenderer.m */,
+				C252E54F1888DED200E0C4BC /* IPDFRenderOperation.h */,
+				C252E5501888DED200E0C4BC /* IPDFRenderOperationDelegate.h */,
+				C252E5251888DDE300E0C4BC /* iPDF.h */,
+				C252E5271888DDE300E0C4BC /* iPDF.m */,
+				C252E5231888DDE300E0C4BC /* Supporting Files */,
+			);
+			path = iPDF;
+			sourceTree = "<group>";
+		};
+		C252E5231888DDE300E0C4BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C252E5241888DDE300E0C4BC /* iPDF-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C252E5361888DDE300E0C4BC /* iPDFTests */ = {
+			isa = PBXGroup;
+			children = (
+				C252E53C1888DDE300E0C4BC /* iPDFTests.m */,
+				C252E5371888DDE300E0C4BC /* Supporting Files */,
+			);
+			path = iPDFTests;
+			sourceTree = "<group>";
+		};
+		C252E5371888DDE300E0C4BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C252E5381888DDE300E0C4BC /* iPDFTests-Info.plist */,
+				C252E5391888DDE300E0C4BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C252E5591888E0C300E0C4BC /* GRMustache */ = {
+			isa = PBXGroup;
+			children = (
+				C252E55A1888E0C300E0C4BC /* include */,
+				C252E56A1888E0C300E0C4BC /* lib */,
+			);
+			path = GRMustache;
+			sourceTree = "<group>";
+		};
+		C252E55A1888E0C300E0C4BC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C252E55B1888E0C300E0C4BC /* GRMustache.h */,
+				C252E55C1888E0C300E0C4BC /* GRMustacheAvailabilityMacros.h */,
+				C252E55D1888E0C300E0C4BC /* GRMustacheConfiguration.h */,
+				C252E55E1888E0C300E0C4BC /* GRMustacheContext.h */,
+				C252E55F1888E0C300E0C4BC /* GRMustacheError.h */,
+				C252E5601888E0C300E0C4BC /* GRMustacheFilter.h */,
+				C252E5611888E0C300E0C4BC /* GRMustacheLocalizer.h */,
+				C252E5621888E0C300E0C4BC /* GRMustacheRendering.h */,
+				C252E5631888E0C300E0C4BC /* GRMustacheTag.h */,
+				C252E5641888E0C300E0C4BC /* GRMustacheTagDelegate.h */,
+				C252E5651888E0C300E0C4BC /* GRMustacheTemplate.h */,
+				C252E5661888E0C300E0C4BC /* GRMustacheTemplateRepository.h */,
+				C252E5671888E0C300E0C4BC /* GRMustacheVersion.h */,
+				C252E5681888E0C300E0C4BC /* NSFormatter+GRMustache.h */,
+				C252E5691888E0C300E0C4BC /* NSValueTransformer+GRMustache.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C252E56A1888E0C300E0C4BC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C252E56B1888E0C300E0C4BC /* libGRMustache6-iOS.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C252E51C1888DDE300E0C4BC /* iPDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C252E5401888DDE300E0C4BC /* Build configuration list for PBXNativeTarget "iPDF" */;
+			buildPhases = (
+				C252E5191888DDE300E0C4BC /* Sources */,
+				C252E51A1888DDE300E0C4BC /* Frameworks */,
+				C252E51B1888DDE300E0C4BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPDF;
+			productName = iPDF;
+			productReference = C252E51D1888DDE300E0C4BC /* libiPDF.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C252E52C1888DDE300E0C4BC /* iPDFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C252E5431888DDE300E0C4BC /* Build configuration list for PBXNativeTarget "iPDFTests" */;
+			buildPhases = (
+				C252E5291888DDE300E0C4BC /* Sources */,
+				C252E52A1888DDE300E0C4BC /* Frameworks */,
+				C252E52B1888DDE300E0C4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C252E5341888DDE300E0C4BC /* PBXTargetDependency */,
+			);
+			name = iPDFTests;
+			productName = iPDFTests;
+			productReference = C252E52D1888DDE300E0C4BC /* iPDFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C252E5151888DDE300E0C4BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Adeel;
+			};
+			buildConfigurationList = C252E5181888DDE300E0C4BC /* Build configuration list for PBXProject "iPDF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C252E5141888DDE300E0C4BC;
+			productRefGroup = C252E51E1888DDE300E0C4BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C252E51C1888DDE300E0C4BC /* iPDF */,
+				C252E52C1888DDE300E0C4BC /* iPDFTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C252E52B1888DDE300E0C4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E53B1888DDE300E0C4BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C252E5191888DDE300E0C4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E5541888DED200E0C4BC /* IPDFPageRenderer.m in Sources */,
+				C252E5281888DDE300E0C4BC /* iPDF.m in Sources */,
+				C252E5511888DED200E0C4BC /* IPDFGenerator.m in Sources */,
+				C252E5521888DED200E0C4BC /* IPDFRenderOperation.m in Sources */,
+				C252E5531888DED200E0C4BC /* IPDFBlankRender.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C252E5291888DDE300E0C4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E53D1888DDE300E0C4BC /* iPDFTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C252E5341888DDE300E0C4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C252E51C1888DDE300E0C4BC /* iPDF */;
+			targetProxy = C252E5331888DDE300E0C4BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C252E5391888DDE300E0C4BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C252E53A1888DDE300E0C4BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C252E53E1888DDE300E0C4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C252E53F1888DDE300E0C4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C252E5411888DDE300E0C4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iPDF.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPDF/iPDF-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Adeel/Development/iPDF/iPDF/GRMustache/lib,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C252E5421888DDE300E0C4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iPDF.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPDF/iPDF-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Adeel/Development/iPDF/iPDF/GRMustache/lib,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C252E5441888DDE300E0C4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPDF/iPDF-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iPDFTests/iPDFTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C252E5451888DDE300E0C4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPDF/iPDF-Prefix.pch";
+				INFOPLIST_FILE = "iPDFTests/iPDFTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C252E5181888DDE300E0C4BC /* Build configuration list for PBXProject "iPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C252E53E1888DDE300E0C4BC /* Debug */,
+				C252E53F1888DDE300E0C4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C252E5401888DDE300E0C4BC /* Build configuration list for PBXNativeTarget "iPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C252E5411888DDE300E0C4BC /* Debug */,
+				C252E5421888DDE300E0C4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C252E5431888DDE300E0C4BC /* Build configuration list for PBXNativeTarget "iPDFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C252E5441888DDE300E0C4BC /* Debug */,
+				C252E5451888DDE300E0C4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C252E5151888DDE300E0C4BC /* Project object */;
+}
